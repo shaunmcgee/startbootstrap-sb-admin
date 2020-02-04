@@ -10,11 +10,19 @@
 	<title>Page Title - SB Admin</title>
 	<link href="css/styles.css" rel="stylesheet" />
 	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha384-vk5WoKIaW/vJyUAd9n/wmopsmNhiy+L2Z+SBxGYnUkunIxVxAv/UtMOhba/xskxh" crossorigin="anonymous"></script>
+	<script src="https://cdn.auth0.com/js/auth0-spa-js/1.2/auth0-spa-js.production.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/js/all.min.js" crossorigin="anonymous"></script>
 
 </head>
 
 <body class="bg-primary">
+
+	<h2>SPA Authentication Sample</h2>
+	<p>Welcome to our page!</p>
+	<button id="btn-login" disabled="true" onclick="login()">Log in</button>
+	<button id="btn-logout" disabled="true" onclick="logout()">Log out</button>
+
+
 	<div id="layoutAuthentication">
 		<div id="layoutAuthentication_content">
 			<main>
